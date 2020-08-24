@@ -1,6 +1,10 @@
 //局部组件定义
 let zujian_a = {
-	template:'<div>局部组件定义</div>',};
+	template:'<div>局部组件定义{{age}}</div>',
+	data:()=>{
+		return {age:19}
+	}
+};
 // 全局组定义
 Vue.component(
 	"component_all",
@@ -10,6 +14,7 @@ Vue.component(
 		components:{
 			zujian_a
 		},
+		// 组件绑定数据 
 		data:()=>{
 			return {epwq:'g an g an'}
 		}
