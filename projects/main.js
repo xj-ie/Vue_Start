@@ -1,11 +1,11 @@
+// 引入vue和App组件
 import Vue from 'vue'
-import App from './APP.vue'
+import App from './App.vue'
 
 new Vue({
     el:'#app',
-    router,
-    // 指定渲染单文件组件
-    render:function(create){
-        return create(App)
+    // 渲染App组件中的内容，返回给index.html文件使用
+    render:function(creater){
+        return creater(App)
     }
 })
